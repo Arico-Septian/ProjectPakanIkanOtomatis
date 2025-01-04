@@ -67,7 +67,7 @@ Dengan menggunakan sensor waktu **DS3231**, sistem ini dapat mengatur waktu pemb
 3. **Tambahkan Widget di Blynk**  
    - Tambahkan widget yang dibutuhkan, seperti:
      - **Button** untuk mengendalikan pakan ikan secara manual.
-     - **Label** untuk menampilkan status waktu dan kondisi sistem.
+     - **Video Streaming** untuk memantau kondisi aquarium secara real time.
    
 4. **Salin Auth Token**  
    - Salin **Auth Token** dari aplikasi Blynk. Token ini akan digunakan dalam kode Arduino untuk menghubungkan ESP32 ke aplikasi Blynk.
