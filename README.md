@@ -101,8 +101,8 @@ Setelah kode di-upload ke **ESP32**, kamu bisa membuka aplikasi **Blynk** di per
 
 Berikut adalah schematic rangkaian dari proyek pakan ikan otomatis:
 
-![Schema![skema](https://github.com/user-attachments/assets/e2457738-0a50-4ef8-8cfc-b098b79187a9)
-tic](skema.jpg)
+![skema](https://github.com/user-attachments/assets/f03115a8-cfc9-483d-adb4-57a7b51cae2f)
+
 
 > **Catatan**: Pastikan komponen terhubung dengan benar agar sistem berjalan dengan lancar.
 
