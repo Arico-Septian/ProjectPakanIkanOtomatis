@@ -106,7 +106,3 @@ Berikut adalah schematic rangkaian dari proyek pakan ikan otomatis:
 
 > **Catatan**: Pastikan komponen terhubung dengan benar agar sistem berjalan dengan lancar.
 
-## Lisensi
-
-Proyek ini menggunakan **MIT License**. Lihat file `LICENSE` untuk detail lebih lanjut.
-
