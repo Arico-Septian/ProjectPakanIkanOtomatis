@@ -27,6 +27,8 @@ Dengan menggunakan sensor waktu **DS3231**, sistem ini dapat mengatur waktu pemb
 - **Kabel Jumper Male to Female** x beberapa  
   Kabel jumper untuk menghubungkan komponen-komponen ke ESP32.
 
+
+
 ## Cara Penggunaan ##
 
 ### Persiapan Hardware ###
@@ -40,13 +42,59 @@ Dengan menggunakan sensor waktu **DS3231**, sistem ini dapat mengatur waktu pemb
 1. **Buka Arduino IDE**.
 2. Pilih board **ESP32** dan port yang sesuai.
 3. Buka file **pakan_ikan_otomatis.ino** di Arduino IDE.
-4. Klik **Upload** untuk meng-upload kode ke ESP32.
+4. Pastikan untuk mengganti **Auth Token** dari Blynk pada kode.
+5. Klik **Upload** untuk meng-upload kode ke ESP32.
 
 ### Pengoperasian ###
 1. Setelah program di-upload, ESP32 akan mulai bekerja sesuai dengan waktu yang telah ditetapkan pada **Sensor DS3231**.
 2. Sistem secara otomatis akan memberikan pakan pada ikan sesuai dengan jadwal yang telah diprogram.
 3. **ESP32 Cam** akan memantau kondisi akuarium dan menampilkan gambar atau video secara real-time.
 4. **LCD 16x2 L2C** akan menampilkan waktu dan status sistem.
+5. **Aplikasi Blynk** memungkinkan kamu untuk mengontrol dan memonitor sistem pakan ikan otomatis dari jarak jauh.
+
+### Langkah-langkah Integrasi Blynk
+
+1. **Instal Aplikasi Blynk**  
+   Unduh aplikasi **Blynk** dari **Google Play Store** atau **Apple App Store**:
+   - [Google Play Store](https://play.google.com/store/apps/details?id=cc.blynk&hl=en&gl=US)
+   - [Apple App Store](https://apps.apple.com/us/app/blynk/id1291731814)
+
+2. **Buat Proyek di Blynk**  
+   - Buka aplikasi Blynk dan buat akun jika belum punya.
+   - Buat **proyek baru** di Blynk dengan memilih **ESP32** sebagai board.
+   - Setelah proyek dibuat, kamu akan mendapatkan **Auth Token** yang digunakan untuk menghubungkan aplikasi dengan ESP32.
+
+3. **Tambahkan Widget di Blynk**  
+   - Tambahkan widget yang dibutuhkan, seperti:
+     - **Button** untuk mengendalikan pakan ikan secara manual.
+     - **Label** untuk menampilkan status waktu dan kondisi sistem.
+   
+4. **Salin Auth Token**  
+   - Salin **Auth Token** dari aplikasi Blynk. Token ini akan digunakan dalam kode Arduino untuk menghubungkan ESP32 ke aplikasi Blynk.
+
+### Menambahkan Blynk ke Kode
+
+1. **Instal Library Blynk**  
+   - Di **Arduino IDE**, buka **Sketch > Include Library > Manage Libraries**.
+   - Cari dan instal library **Blynk**.
+
+2. **Modifikasi Kode untuk Integrasi Blynk**  
+   - Buka file `pakan_ikan_otomatis.ino` di Arduino IDE.
+   - Masukkan **Auth Token** yang telah kamu salin dari aplikasi Blynk ke dalam kode berikut:
+     ```cpp
+     #define BLYNK_AUTH_TOKEN "YourAuthTokenHere"
+     ```
+   - Pastikan untuk mengganti `"YourAuthTokenHere"` dengan **Auth Token** yang kamu dapatkan dari aplikasi Blynk.
+
+3. **Upload Program ke ESP32**  
+   Setelah kamu menambahkan informasi **Auth Token**, upload program ke **ESP32** seperti biasa.
+
+### Penggunaan Blynk
+
+Setelah kode di-upload ke **ESP32**, kamu bisa membuka aplikasi **Blynk** di perangkat mobile untuk:
+
+- **Mengontrol Pakan Ikan**: Gunakan **Button Widget** untuk memberikan pakan ikan secara manual kapan saja dari jarak jauh.
+- **Memantau Status Waktu**: Melalui **Label Widget**, kamu bisa melihat waktu pemberian pakan ikan yang telah dijadwalkan.
 
 ## Schematic ##
 
