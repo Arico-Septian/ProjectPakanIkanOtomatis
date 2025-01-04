@@ -94,7 +94,8 @@ Dengan menggunakan sensor waktu **DS3231**, sistem ini dapat mengatur waktu pemb
 Setelah kode di-upload ke **ESP32**, kamu bisa membuka aplikasi **Blynk** di perangkat mobile untuk:
 
 - **Mengontrol Pakan Ikan**: Gunakan **Button Widget** untuk memberikan pakan ikan secara manual kapan saja dari jarak jauh.
-- **Memantau Status Waktu**: Melalui **Label Widget**, kamu bisa melihat waktu pemberian pakan ikan yang telah dijadwalkan.
+- **Memantau Kondisi Aquarium**: Gunakan **Video Streaming** untuk memantau kondisi aquarium secara real time.
+- **Menghidupkan flash**: Gunakan **Button Widget** untuk menghidupkan flash agar seisi aquarium terlihat
 
 ## Schematic ##
 
